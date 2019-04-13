@@ -1,0 +1,26 @@
+{
+  "name": "d-config",
+  "version": "0.1.0-beta.0",
+  "main": "index.js",
+  "bin": {
+    "d-config": "bin/d-config.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "prepare": "npm run build && [ -r ~/.npmignore ] && cat ~/.npmignore > .npmignore && cat npmignore >> .npmignore"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "@euxn23/quicktype": "^15.0.177-patch.1",
+    "deepmerge": "3.2.0",
+    "yargs": "13.2.2"
+  },
+  "devDependencies": {
+    "@types/node": "^11.13.0",
+    "@types/yargs": "13.0.0",
+    "prettier": "^1.17.0",
+    "prettier-cli": "^0.1.0",
+    "ts-node": "^8.0.3",
+    "typescript": "^3.4.1"
+  }
+}
